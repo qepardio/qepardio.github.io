@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stop it.</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            background-color: #182139;
+        }
+        
+        h1 {
+            font-size: 7vw;
+            color: #fff;
+        }
+
+        .container {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            overflow-x: auto;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+
+        .image-container img {
+            flex: 0 0 auto;
+            width: calc(16.666% - 10px);
+            max-width: 100%;
+            height: auto;
+            object-fit: cover;
+            margin: 0 5px;
+        }
+
+        @media (max-width: 768px) {
+            .image-container {
+                justify-content: flex-start;
+            }
+            .image-container img {
+                width: 33.333%;
+            }
+        }
+        @media screen and (max-width: 768px) {
+            html {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Is it really worth it?</h1>
+    </div>
+    <br>
+    <div class="image-container">
+        <img src="Pics/Image1.jpg" alt="Image 1">
+        <img src="Pics/Image2.jpg" alt="Image 2">
+        <img src="Pics/Image3.jpg" alt="Image 3">
+        <img src="Pics/Image4.jpg" alt="Image 4">
+        <img src="Pics/Image5.jpg" alt="Image 5">
+        <img src="Pics/Image6.jpg" alt="Image 6">
+    </div>
+    <h2 style="color:red;">No.</h2>
+</body>
+</html>
